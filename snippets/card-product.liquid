@@ -24,8 +24,16 @@
 {% endcomment %}
 
 {%- liquid
-	assign product_image_a = card_product.media[1]
-	assign product_image_b = card_product.media[0]
+  if card_product.media[0]
+    assign product_image_a = card_product.media[0]
+  else
+    assign product_image_a = nil
+  endif
+  if card_product.media[1]
+	  assign product_image_b = card_product.media[1]
+  else
+    assign product_image_b = nil
+  endif
 -%}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
