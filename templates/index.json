@@ -7,7 +7,6 @@
         "166246825824a875b4-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
             "heading": "Pro Photography Backdrops",
             "heading_size": "h0",
             "subheading": "High-end replica textures & rich brand-matched colours.",
@@ -42,24 +41,24 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Pro Photography Backdrops",
+            "heading": "Curated art from the digital ether",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "High-end replica textures & rich brand-matched colours.",
+            "text": "Imagery from a new intelligence.",
             "text_style": "subtitle"
           }
         },
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Vinyl",
+            "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/vinyl-backdrops",
             "button_style_secondary_1": false,
-            "button_label_2": "Shop Canvas",
+            "button_label_2": "About us",
             "button_link_2": "shopify:\/\/collections\/canvas-studio-backdrops",
             "button_style_secondary_2": false
           }
@@ -71,7 +70,7 @@
         "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
+        "image": "shopify:\/\/shop_images\/Mushroom_Art.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
@@ -86,6 +85,7 @@
     },
     "165824098506c5f22d": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1658240985159b1d2b-2": {
           "type": "featured_collection",
@@ -134,12 +134,12 @@
     "16595607590a998055": {
       "type": "featured-collection",
       "settings": {
-        "title": "Top 'drops",
+        "title": "What's new",
         "heading_size": "h1",
-        "description": "<p>The latest and greatest from our vinyl photography backdrop range.<\/p>",
+        "description": "<p>The latest and greatest from our range.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "home",
+        "collection": "gross-art",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -242,7 +242,7 @@
         "16624678690c45f259-2": {
           "type": "button",
           "settings": {
-            "button_label": "Shop all vinyl",
+            "button_label": "Shop all art",
             "button_link": "shopify:\/\/collections\/vinyl-backdrops",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -293,6 +293,7 @@
     },
     "16624622629ed1079d": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "166246226246a2399d-0": {
           "type": "heading",
@@ -316,6 +317,7 @@
     },
     "16582378894a0b6caf": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "1658237889a8a2ef12-0": {
           "type": "column",
@@ -406,12 +408,14 @@
     },
     "16582341709c2541ed": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "1659627804e7363432": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1659627804f80a1f0c-2": {
           "type": "button",
@@ -627,7 +631,6 @@
         "1662462581510d643f-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
         "image_overlay_opacity": 50,
         "image_height": "small",
         "adapt_height_first_image": false,
@@ -672,7 +675,6 @@
         "165823454926469c5d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",

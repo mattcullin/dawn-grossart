@@ -7,13 +7,13 @@
     "gradient_accent_2": "",
     "colors_text": "#000000",
     "colors_outline_button_labels": "#000000",
-    "colors_background_1": "#ffffff",
+    "colors_background_1": "#f7f5e3",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "type_header_font": "libre_franklin_n9",
+    "type_header_font": "abril_fatface_n4",
     "heading_scale": 110,
-    "type_body_font": "anonymous_pro_n4",
+    "type_body_font": "mono",
     "body_scale": 110,
     "page_width": 1600,
     "spacing_sections": 0,
@@ -111,6 +111,7 @@
             "type": "announcement",
             "settings": {
               "text": "Get 25% off 4+ items",
+              "text_alignment": "center",
               "color_scheme": "accent-2",
               "link": "#beacon-modal-bulk"
             }
@@ -126,14 +127,17 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/club-backdrops-logo-black.png",
+          "logo": "shopify:\/\/shop_images\/grossart_word_gross_art_logo_halftone_587e63b8-3644-48cd-aaf5-2453232031a6.png",
           "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "action-bar",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
-          "margin_bottom": 0
+          "mobile_logo_position": "center",
+          "margin_bottom": 0,
+          "padding_top": 20,
+          "padding_bottom": 20
         }
       },
       "footer": {
@@ -143,21 +147,21 @@
             "type": "link_list",
             "settings": {
               "heading": "Info",
-              "menu": "info"
+              "menu": ""
             }
           },
           "footer-0": {
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "quick-links"
+              "menu": ""
             }
           },
           "2dbfd991-6c38-497c-8f6c-db596865072b": {
             "type": "link_list",
             "settings": {
               "heading": "Collections",
-              "menu": "collections"
+              "menu": ""
             }
           },
           "694453d8-a649-41d8-8826-50c3690f2976": {
