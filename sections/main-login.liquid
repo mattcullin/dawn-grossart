@@ -94,7 +94,8 @@
         </h2>
         {{ form.errors | default_errors }}
       {%- endif -%}
-
+      
+      <p>Sign in for easy repeat orders and access to your invoice history.</p>
       <div class="field">        
         <input
           type="email"
@@ -140,6 +141,7 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
+      <p>Didn't create an account when you purchased? That's ok! Just create one using the same email for access to your previous order(s):</p>
       <a href="{{ routes.account_register_url }}">
         {{ 'customer.login_page.create_account' | t }}
       </a>

@@ -1,0 +1,43 @@
+/* CLUB BACKDROPS CSS */
+
+/* Typography */
+h1, h2, h3, h4, h5,
+.h0, .h1, .h2, .h3, .h4, .h5,
+button,
+.button { 
+    text-transform: uppercase;
+}
+
+button,
+.button,
+.header__inline-menu { 
+    font-family: var(--font-heading-family); 
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    text-transform: uppercase;
+}
+
+.highlight { background: rgb(var(--color-base-accent-2)); color: #fff; padding: 2px 4px; font-weight: 700; }
+.highlight-alt { background: rgb(var(--color-base-accent-3)); color: #fff; padding: 2px 4px; font-weight: 700; }
+.disclaimer { font-size: 1.3rem; }
+
+/* Global */
+.dashed-banner { border-width: 2px; border-style: dashed; border-color: var(--color-base-accent-1); color: var(--color-base-text); text-align: center; padding: 10px; font-size: 1.3rem; } 
+.dashed-banner.accent-text { color: rgb(var(--color-base-accent-2)); }
+.dashed-banner.accent-border { border-color: rgb(var(--color-base-accent-2)); }
+.dashed-banner.alt-accent-text { color: rgb(var(--color-base-accent-3)); }
+.dashed-banner.alt-accent-border { border-color: rgb(var(--color-base-accent-3)); }
+.dashed-banner.multi-line { text-align: left; padding: 0 20px; }
+
+/* Cart Notification 
+- hide checkout button */
+.cart-notification__links form { display: none; }
+.cart-notification-product { padding-bottom: 2rem; }
+
+/* Discount Cart App Adjustments */
+/* .scDiscount__container input#submit,
+.scDiscount__container .sc_simple-info__row strong,
+.sc_simple-info .sc_simple-info__row div strong { font-family: var(--font-heading-family); text-transform: uppercase; font-weight: var(--font-heading-weight) !important; }
+.scDiscount__container input#submit:hover { cursor: pointer; }
+.scDiscount__container .sc-tag.sc_reduced .code { display: none; }
+.scDiscount__container button { border: none; } */

@@ -1,0 +1,38 @@
+{%- comment -%}
+    CLUB - Renders 'VAT included' message for GB, or appropriate alternative for other Zones
+
+    Usage:
+    {% render 'club-tax-message' %}
+    
+    or to render to a variable:
+    {%- liquid 
+        capture tax_message
+            render 'club-tax-message'
+        endcapture 
+    -%}
+{%- endcomment -%}
+
+{%- liquid 
+    capture zone
+        render 'club-zone'
+    endcapture 
+-%}
+{%- liquid 
+case zone
+    when 'GB'
+        assign tax_message = 'VAT included.'
+    when 'EU3'
+        assign tax_message = ''
+    when 'EU1', 'EU2'
+        assign tax_message = 'Import taxes included.'
+    when 'US'
+        assign tax_message = 'No US sales tax.'
+    when 'AU'
+        assign tax_message = 'Taxes included.'
+    when 'CA'
+        assign tax_message = 'Import taxes may apply.'
+    else
+        assign tax_message = 'Import taxes may apply.'
+    endcase
+-%}
+{{ tax_message }}

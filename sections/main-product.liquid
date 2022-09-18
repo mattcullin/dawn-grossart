@@ -332,6 +332,7 @@
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
+              {% comment %}CLUB - switching default tax message code with Zone specific code
               {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
                   {%- if shop.taxes_included -%}
@@ -340,6 +341,17 @@
                   {%- if shop.shipping_policy.body != blank -%}
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
+                </div>
+              {%- endif -%}
+              {% endcomment %}
+              {%- liquid 
+                capture tax_message
+                  render 'club-tax-message'
+                endcapture 
+              -%}
+              {%- if tax_message.size > 0 -%}
+                <div class="product__tax caption rte">
+                  {{ tax_message }}
                 </div>
               {%- endif -%}
               <div {{ block.shopify_attributes }}>

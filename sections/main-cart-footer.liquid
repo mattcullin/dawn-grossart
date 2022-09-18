@@ -40,35 +40,106 @@
                 </div>
 
                 <small class="tax-note caption-large rte">
-                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- elsif cart.taxes_included -%}
-                    {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
-                  {%- else -%}
-                    {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                  {% comment %}CLUB - switching default tax message code with Zone specific code
+                    {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                      {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                    {%- else -%}
+                      {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                    {%- endif -%}
+                  {% endcomment %}
+                  {%- liquid 
+                    capture tax_message
+                      render 'club-tax-message'
+                    endcapture 
+                  -%}
+                  {%- if tax_message.size > 0 -%}
+                      {{ tax_message }}<br/>
                   {%- endif -%}
+                  Got a discount code? Add it in the next step.
                 </small>
+
+                {% comment %}CLUB - Bulk Discount + Shipping Banner{% endcomment %}
+                {% assign mystery_pack_total = 0 %}
+                {%- for item in cart.items -%}
+                  {%- if item.sku contains 'MYST' -%}
+                    {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
+                  {%- endif -%}
+                {%- endfor -%}
+                {% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
+                {% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
+                {% render 'club-shipping-discount-banner' %}
+
+                {% comment %}CLUB - container for hidden cart attributes{% endcomment %}
+                <div id="club-cart-attributes">
+                  {%- liquid 
+                    capture zone
+                        render 'club-zone'
+                    endcapture
+                    if zone == 'AU' or zone == 'CA'
+                      assign zone = 'ROW'
+                    endif
+                  -%}
+                  <input type="hidden" name="attributes[cart_currency]" value="{{ cart.currency.iso_code }}" />
+                  <input type="hidden" name="attributes[Zone]" value="{{ zone }}" />
+                </div>
+                
               </div>
             {%- else -%}
               <div class="cart__ctas" {{ block.shopify_attributes }}>
+                {% comment %}CLUB - see if cart is valid, disable Check out button if:
+                  1. Mystery Pack is only item in cart
+                  2. Holiday mode setting is on
+                {% endcomment %}
+                {% assign disabled_cart = false %}
+                {% assign disabled_cart_messages = '' %}
+                {% if mystery_pack_total > 0 and cart.item_count == 1 %}
+                  {% assign disabled_cart_messages = disabled_cart_messages | append: "Mystery Packs must be purchased alongside another backdrop.;" %}
+                  {% assign disabled_cart = true %}
+                {% endif %} 
+                {% if settings.holiday_mode_enabled %}
+                  {% assign disabled_cart_messages = disabled_cart_messages | append: settings.holiday_mode_message | append: ";" %}
+                  {% assign disabled_cart = true %}
+                {% endif %}
+
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty or disabled_cart == true %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
-                </button>
+                </button>                
               </div>
 
+              {% comment %}CLUB - hiding additional checkout buttons (e.g. PayPal/G pay)
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
+              {% endcomment %}
+              
+              <div class="cart__disabled">
+                {% if disabled_cart %}
+                  {% assign disabled_cart_messages = disabled_cart_messages | split: ';' %}
+                  {% for message in disabled_cart_messages %}
+                    <div class="cart-item__error" role="alert">
+                      <small class="cart-item__error-text">{{ message }}</small>
+                      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+                        <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
+                        <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"></circle>
+                        <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"></path>
+                        <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                      </path></svg>
+                    </div>
+                  {% endfor %}
+                {% endif %}
+              </div>
+
           {%- endcase -%}
         {% endfor %}
 

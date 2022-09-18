@@ -5,7 +5,7 @@ class CartNotification extends HTMLElement {
     this.notification = document.getElementById('cart-notification');
     this.header = document.querySelector('sticky-header');
     this.onBodyClick = this.handleBodyClick.bind(this);
-
+    
     this.notification.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelectorAll('button[type="button"]').forEach((closeButton) =>
       closeButton.addEventListener('click', this.close.bind(this))
@@ -31,7 +31,8 @@ class CartNotification extends HTMLElement {
   }
 
   renderContents(parsedState) {
-      this.cartItemKey = parsedState.key;
+      // this.cartItemKey = parsedState.key; CLUB - changed to below line of code (from key to variant_id) to fix line item script conflict
+      this.cartItemKey = parsedState.variant_id;
       this.getSectionsToRender().forEach((section => {
         document.getElementById(section.id).innerHTML =
           this.getSectionInnerHTML(parsedState.sections[section.id], section.selector);
@@ -46,6 +47,9 @@ class CartNotification extends HTMLElement {
       {
         id: 'cart-notification-product',
         selector: `[id="cart-notification-product-${this.cartItemKey}"]`,
+      },
+      {
+        id: 'club-cart-notification-banners'
       },
       {
         id: 'cart-notification-button'

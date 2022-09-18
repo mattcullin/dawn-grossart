@@ -1,0 +1,39 @@
+{%- comment -%}
+    CLUB - Renders shipping discount banner - threshold is in local currency
+
+    Usage:
+    {% render 'club-shipping-discount-banner' %}
+{%- endcomment -%}
+
+{%- liquid 
+    capture zone
+      render 'club-zone'
+    endcapture 
+
+    case zone
+      when 'GB', 'EU3'
+        assign free_shipping_threshold = 6000
+      when 'EU1'
+        assign free_shipping_threshold = 9000
+      when 'EU2'
+        assign free_shipping_threshold = 18000
+      when 'US'
+        assign free_shipping_threshold = 9000
+      when 'AU'
+        assign free_shipping_threshold = 12000
+      when 'CA'
+        assign free_shipping_threshold = 12000
+      when 'ROW'
+        assign free_shipping_threshold = 9000
+    endcase
+
+    assign gross_total = cart.total_price
+-%}
+
+<div class="club-shipping-discount-banner">
+    {% if gross_total > 0 and gross_total < free_shipping_threshold %}
+        <p class="dashed-banner accent-text accent-border">🚚 Spend <strong>another {{ free_shipping_threshold | minus: gross_total | money }}</strong> to get<br><span class="highlight">FREE shipping</span></p>
+    {% elsif gross_total >= free_shipping_threshold %}
+        <p class="dashed-banner">🚛 You get <span class="highlight-alt">FREE shipping</span>!</p>
+    {% endif %}
+</div>

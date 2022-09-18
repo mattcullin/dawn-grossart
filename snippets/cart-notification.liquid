@@ -18,6 +18,8 @@
         </button>
       </div>
       <div id="cart-notification-product" class="cart-notification-product"></div>
+      {% comment %}CLUB - added shipping and bulk discount banners to notification{% endcomment %}
+      <div id="club-cart-notification-banners" class="club-cart-notification-banners"></div>
       <div class="cart-notification__links">
         <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--secondary button--full-width"></a>
         <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">

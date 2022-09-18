@@ -40,6 +40,7 @@
                 <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
                 <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                <th id="ColumnPDF" scope="col" role="columnheader">Invoice</th>
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -56,7 +57,7 @@
                     </a>
                   </td>
                   <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                    {{ order.created_at | time_tag: format: 'date' }}
+                    {{ order.created_at | date: '%d %b %Y' }}
                   </td>
                   <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
                     {{ order.financial_status_label }}
@@ -65,7 +66,10 @@
                     {{ order.fulfillment_status_label }}
                   </td>
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                    {{ order.total_price | money_with_currency }}</td>
+                    {{ order.total_price | money_without_currency }}</td>
+                  <td headers="RowOrder ColumnPDF" role="cell" data-label="Invoice">
+                    <a target='_blank' href='https://clubbackdrops.com/apps/download-pdf/orders/241d52a6b674e8bc6204/{{ order.id | times: 9292 }}/{{ order.name | handleize }}.pdf'>&#128195; PDF</a>
+                  </td>
                 </tr>
               {%- endfor -%}
             </tbody>
@@ -126,9 +130,10 @@
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
-    </div>
 
+    </div>
   </div>
+  {% render 'club-account-referral-banner' %}
 </div>
 
 {% schema %}

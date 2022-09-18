@@ -548,6 +548,13 @@ a.product__text {
   display: block;
 }
 
+/*@media screen and (max-width: 749px) {
+  .product__media-item--variant:first-child {
+    /* CLUB - remove right padding on mobile when 'Hide other variants’ media after selecting a variant' option is switched on - makes it clearer there are additional images present
+    /* padding-right: 1.5rem; */
+/*  }
+}*/
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .product__media-list .product__media-item:first-child {
     padding-left: 0;

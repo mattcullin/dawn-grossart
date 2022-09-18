@@ -1,0 +1,84 @@
+<style>
+    #cookies-banner {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2em 1.5em 2em;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: #fff;
+        color: #000;
+        z-index: 1000;
+        border-top: solid .1rem rgba(var(--color-foreground),.08);
+    }
+    #cookies-banner p {
+        max-width: 990px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #cookies-banner button {
+        margin-bottom: 0.5em;
+    }
+    @media screen and (min-width: 750px) {
+        #cookies-banner {
+            z-index: 900;
+        }
+    }
+</style>
+
+<div id="cookies-banner">
+    <p>We use cookies to deliver the best website experience. These allow you to use essential functions and maintain your site preferences, and allow us to analyse site usage in order to make improvements. Declining them may impact your visit. <a href="/pages/privacy-policy">See our policy here &rarr;</a></p>
+    <button class="button button--secondary" onclick="handleDecline()">Decline</button>
+    <button class="button" onclick="handleAccept()">Accept</button>
+</div>
+
+<script>
+    function getBannerEl() {
+        return document.getElementById('cookies-banner');
+    }
+
+    function hideBanner(res) {
+        getBannerEl().style.display = 'none';
+    }
+
+    function showBanner() {
+        getBannerEl().style.display = 'block';
+    }
+
+    function handleAccept(e) {
+        window.Shopify.customerPrivacy.setTrackingConsent(true, hideBanner);
+
+        document.addEventListener('trackingConsentAccepted',function() {
+        console.log('trackingConsentAccepted event fired');
+        });
+    }
+
+    function handleDecline() {
+        window.Shopify.customerPrivacy.setTrackingConsent(false,hideBanner);
+    }
+
+    function initCookieBanner() {
+        const userCanBeTracked = window.Shopify.customerPrivacy.userCanBeTracked();
+        const userTrackingConsent = window.Shopify.customerPrivacy.getTrackingConsent();
+
+        if(!userCanBeTracked && userTrackingConsent === 'no_interaction') {
+        showBanner();
+        }
+    }
+
+    window.Shopify.loadFeatures([
+        {
+        name: 'consent-tracking-api',
+        version: '0.1',
+        }
+    ],
+    function(error) {
+        if (error) {
+        throw error;
+        }
+
+        initCookieBanner();
+    });
+</script>  

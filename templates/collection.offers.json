@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "enable_tag_filter": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "1653135655c73d6373": {
+      "type": "multicolumn",
+      "blocks": {
+        "16531356553e3ade54-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-bulk-discount.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "#beacon-modal-bulk"
+          }
+        },
+        "16531356553e3ade54-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-join-the-club-30.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/join"
+          }
+        },
+        "16531356553e3ade54-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-free-shipping.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "#beacon-modal-delivery"
+          }
+        }
+      },
+      "block_order": [
+        "16531356553e3ade54-0",
+        "16531356553e3ade54-1",
+        "16531356553e3ade54-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "1653135655c73d6373"
+  ]
+}

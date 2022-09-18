@@ -1,0 +1,35 @@
+{%- comment -%}
+    CLUB - Renders Zone based on localization country code - can be used with 'capture' liquid to assign Zone to a variable
+
+    Usage:
+    {% render 'club-zone' %}
+    
+    or to render to a variable:
+    {%- liquid 
+        capture zone
+            render 'club-zone'
+        endcapture 
+    -%}
+{%- endcomment -%}
+
+{%- liquid 
+    case localization.country.iso_code
+      when 'GB', 'IM'
+        assign zone = 'GB'
+      when 'JE', 'GG'
+        assign zone = 'EU3'
+      when 'GR'
+        assign zone = 'EU2'
+      when 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE'
+        assign zone = 'EU1'
+      when 'US'
+        assign zone = 'US'
+      when 'AU'
+        assign zone = 'AU'
+      when 'CA'
+        assign zone = 'CA'
+      else
+        assign zone = 'ROW'
+    endcase
+-%}
+{{ zone }}

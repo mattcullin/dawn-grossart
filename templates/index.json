@@ -1,30 +1,66 @@
 {
   "sections": {
+    "1662468258bac8e3eb": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "166246825824a875b4-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
+            "heading": "Pro Photography Backdrops",
+            "heading_size": "h0",
+            "subheading": "High-end replica textures & rich brand-matched colours.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 40,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "166246825824a875b4-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Pro Photography Backdrops",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "High-end replica textures & rich brand-matched colours.",
+            "text_style": "subtitle"
           }
         },
-        "button": {
+        "8f0f98f7-ca68-45ea-bc7f-673812ac4f55": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_1": "Shop Vinyl",
+            "button_link_1": "shopify:\/\/collections\/vinyl-backdrops",
+            "button_style_secondary_1": false,
+            "button_label_2": "Shop Canvas",
+            "button_link_2": "shopify:\/\/collections\/canvas-studio-backdrops",
             "button_style_secondary_2": false
           }
         }
@@ -32,142 +68,141 @@
       "block_order": [
         "heading",
         "text",
-        "button"
+        "8f0f98f7-ca68-45ea-bc7f-673812ac4f55"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-hero-home-zebra-wood.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "165824098506c5f22d": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "1658240985159b1d2b-2": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
+            "collection": "custom-photography-backdrops"
           }
         },
-        "text": {
-          "type": "text",
+        "1658240985159b1d2b-0": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "collection": "replica-surfaces-vinyl-backdrops"
+          }
+        },
+        "1658240985159b1d2b-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "block-colour-vinyl-backdrops"
+          }
+        },
+        "306031bc-bfcc-4e3f-be69-f97390ab0362": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canvas-studio-backdrops"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "1658240985159b1d2b-2",
+        "1658240985159b1d2b-0",
+        "1658240985159b1d2b-1",
+        "306031bc-bfcc-4e3f-be69-f97390ab0362"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
+        "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "background-1",
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 12
+      }
+    },
+    "16595607590a998055": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Top 'drops",
+        "heading_size": "h1",
+        "description": "<p>The latest and greatest from our vinyl photography backdrop range.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "home",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
+        "enable_quick_add": false,
         "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 0
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "16624611931172d8e4": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
-        "column1": {
+        "166246119326b1732f-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-shop-texture.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/collections\/replica-surfaces-vinyl-backdrops"
           }
         },
-        "column2": {
+        "166246119326b1732f-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/club-backdrops-shop-custom-v3.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/collections\/block-colour-vinyl-backdrops"
           }
         },
-        "column3": {
+        "166246119326b1732f-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-shop-custom-v2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/custom-photography-backdrops"
+          }
+        },
+        "a3a9edbb-8544-418c-91d9-8e3864d0d01c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-how-to-blog.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/blogs\/how-to"
+          }
+        },
+        "6461e096-f56c-4c3a-ade1-e247bc18abae": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -178,34 +213,549 @@
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "166246119326b1732f-0",
+        "166246119326b1732f-1",
+        "166246119326b1732f-2",
+        "a3a9edbb-8544-418c-91d9-8e3864d0d01c",
+        "6461e096-f56c-4c3a-ade1-e247bc18abae"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16624678692b095618": {
+      "type": "rich-text",
+      "blocks": {
+        "16624678690c45f259-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop all vinyl",
+            "button_link": "shopify:\/\/collections\/vinyl-backdrops",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16624678690c45f259-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Just Arrived",
+        "heading_size": "h2",
+        "description": "<p>The latest additions to our vinyl backdrop collection.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "vinyl-backdrops",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16624622629ed1079d": {
+      "type": "rich-text",
+      "blocks": {
+        "166246226246a2399d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Proudly used by<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "166246226246a2399d-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
+    "16582378894a0b6caf": {
+      "type": "multicolumn",
+      "blocks": {
+        "1658237889a8a2ef12-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-deliveroo.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/deliveroo.co.uk\/"
+          }
+        },
+        "1658237889a8a2ef12-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-john-lewis.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/www.johnlewis.com\/"
+          }
+        },
+        "1658237889a8a2ef12-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/www.buzzfeed.com\/"
+          }
+        },
+        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-bross.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/brossbagels.com\/"
+          }
+        },
+        "112ab51d-3b9c-40a6-8f7c-85c71d75bf22": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-roja-parfums.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https:\/\/rojaparfums.com\/"
+          }
+        },
+        "a72d37d9-48c1-4c33-b178-3df975b77642": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-used-by-buzzfeed_6055a305-95dd-4560-83af-dcb55761bdc5.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1658237889a8a2ef12-0",
+        "1658237889a8a2ef12-1",
+        "1658237889a8a2ef12-2",
+        "40bb9c5f-e0ea-48e2-9d99-c7988228cd2b",
+        "112ab51d-3b9c-40a6-8f7c-85c71d75bf22",
+        "a72d37d9-48c1-4c33-b178-3df975b77642"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 32,
+        "padding_bottom": 48
+      }
+    },
+    "16582341709c2541ed": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1659627804e7363432": {
+      "type": "rich-text",
+      "blocks": {
+        "1659627804f80a1f0c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Over 3,000+ 5-Star Reviews",
+            "button_link": "shopify:\/\/pages\/reviews",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1659627804f80a1f0c-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "1656946869fb9f7093": {
+      "type": "club-multicolumn-localized",
+      "blocks": {
+        "1656946869696b0d4a-0": {
+          "type": "column",
+          "settings": {
+            "available_zones": "GB, EU3",
+            "heading": "GB, EU3 Shipping",
+            "title": "🚚 Free UK Shipping 🌞",
+            "text": "<p><strong>For orders over £60<br\/><\/strong>Order before 1PM for next-day*<\/p>",
+            "link_label": "UK Delivery",
+            "link": "#beacon-modal-delivery-gb"
+          }
+        },
+        "14fd82da-6cba-4a45-a3fd-6bf3af67c71b": {
+          "type": "column",
+          "settings": {
+            "available_zones": "US",
+            "heading": "US Shipping",
+            "title": "🚚 Free US Shipping 🗽",
+            "text": "<p><strong>For orders over $90<br\/><\/strong>2-3 working days, No fees<\/p>",
+            "link_label": "US Delivery",
+            "link": "#beacon-modal-delivery-us"
+          }
+        },
+        "af9db3da-567e-4650-9daa-730dd8f3a746": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU1",
+            "heading": "EU1 Shipping",
+            "title": "🚚 Free EU Shipping 🌞",
+            "text": "<p><strong>For orders over €90<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "EU Delivery",
+            "link": "#beacon-modal-delivery-eu"
+          }
+        },
+        "b632574f-2617-4bbb-a477-35b331dbfaf4": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU2",
+            "heading": "EU2 Shipping",
+            "title": "🚚 Free EU Shipping 🌞",
+            "text": "<p><strong>For orders over €180<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "EU Delivery",
+            "link": "#beacon-modal-delivery-eu"
+          }
+        },
+        "b2b8a891-ea71-429e-b8e5-5cf3443f248f": {
+          "type": "column",
+          "settings": {
+            "available_zones": "AU",
+            "heading": "AU Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over $120<br\/><\/strong>No hidden customs fees*<\/p>",
+            "link_label": "Australia Delivery",
+            "link": "#beacon-modal-delivery-au"
+          }
+        },
+        "59a851a4-861e-4d3a-912a-bb98fdf19c6d": {
+          "type": "column",
+          "settings": {
+            "available_zones": "CA",
+            "heading": "CA Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over $120<\/strong><\/p>",
+            "link_label": "Canada Delivery",
+            "link": "#beacon-modal-delivery-ca"
+          }
+        },
+        "20ae4227-507a-4d0a-8277-2d02aa64f6db": {
+          "type": "column",
+          "settings": {
+            "available_zones": "ROW",
+            "heading": "ROW Shipping",
+            "title": "🚚 Free Shipping 🌞",
+            "text": "<p><strong>For orders over £90<\/strong><\/p>",
+            "link_label": "Worldwide Delivery",
+            "link": "#beacon-modal-delivery-row"
+          }
+        },
+        "1656946869696b0d4a-1": {
+          "type": "column",
+          "settings": {
+            "available_zones": "GB, EU3",
+            "heading": "GB, EU3 Returns",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<br\/><\/strong>UK returns address<\/p>",
+            "link_label": "Returns policy",
+            "link": "#beacon-modal-returns"
+          }
+        },
+        "6d0c0961-ea2e-40c6-8e32-dcf807a12606": {
+          "type": "column",
+          "settings": {
+            "available_zones": "US",
+            "heading": "US Returns",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><br\/>US returns address<\/p>",
+            "link_label": "Returns policy",
+            "link": "#beacon-modal-returns"
+          }
+        },
+        "e0ab27cd-8f82-49cc-8244-29c954f3296b": {
+          "type": "column",
+          "settings": {
+            "available_zones": "EU1, EU2, AU, CA, ROW",
+            "heading": "EU1, EU2, AU, CA, ROW Returns",
+            "title": "✅ 30-Day Returns 😃",
+            "text": "<p><strong>On all non-custom backdrops<\/strong><\/p>",
+            "link_label": "Returns policy",
+            "link": "#beacon-modal-returns"
+          }
+        },
+        "1656946869696b0d4a-2": {
+          "type": "column",
+          "settings": {
+            "available_zones": "ALL",
+            "heading": "ALL Bulk Discounts",
+            "title": "💸 Bulk Discounts 👍",
+            "text": "<p><strong>Up to 20% Off<\/strong><\/p><p>Starting at 2+ items<\/p>",
+            "link_label": "Read more",
+            "link": "#beacon-modal-bulk"
+          }
+        }
+      },
+      "block_order": [
+        "1656946869696b0d4a-0",
+        "14fd82da-6cba-4a45-a3fd-6bf3af67c71b",
+        "af9db3da-567e-4650-9daa-730dd8f3a746",
+        "b632574f-2617-4bbb-a477-35b331dbfaf4",
+        "b2b8a891-ea71-429e-b8e5-5cf3443f248f",
+        "59a851a4-861e-4d3a-912a-bb98fdf19c6d",
+        "20ae4227-507a-4d0a-8277-2d02aa64f6db",
+        "1656946869696b0d4a-1",
+        "6d0c0961-ea2e-40c6-8e32-dcf807a12606",
+        "e0ab27cd-8f82-49cc-8244-29c954f3296b",
+        "1656946869696b0d4a-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "166246258182f012fe": {
+      "type": "image-banner",
+      "blocks": {
+        "1662462581510d643f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Club Backdrops?",
+            "heading_size": "h2"
+          }
+        },
+        "1662462581510d643f-1": {
+          "type": "text",
+          "settings": {
+            "text": "We're here to up your photography game, whether you're a pro or a snap-happy smartphone shooter. Our photography backdrops have been used by big names like John Lewis, BuzzFeed and Deliveroo. We print & hand-finish them all under one roof on only the highest-grade substrates, at an unmatched resolution for ultimate realism. Our collection remains on-trend with ongoing, fresh seasonal releases. And we offer some of the fastest turnaround times to the UK, USA and Europe, including custom jobs. See how we roll:",
+            "text_style": "body"
+          }
+        },
+        "1662462581510d643f-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "@clubbackdrops",
+            "button_link_1": "https:\/\/www.instagram.com\/clubbackdrops\/",
+            "button_style_secondary_1": true,
+            "button_label_2": "@clubstyling",
+            "button_link_2": "https:\/\/www.instagram.com\/clubstyling\/",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "1662462581510d643f-0",
+        "1662462581510d643f-1",
+        "1662462581510d643f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
+        "image_overlay_opacity": 50,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "165823455059910c2d": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "165823454926469c5d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Club Backdrops?",
+            "heading_size": "h2"
+          }
+        },
+        "165823454926469c5d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're here to up your photography game, whether you're a pro or a snap-happy smartphone shooter. Our photography backdrops have been used by big names like John Lewis, BuzzFeed and Deliveroo. We print & hand-finish them all under one roof on only the highest-grade substrates, at an unmatched resolution for ultimate realism. Our collection remains on-trend with ongoing, fresh seasonal releases. And we offer some of the fastest turnaround times to the UK, USA and Europe, including <a href=\"https:\/\/clubbackdrops.com\/collections\/custom-photography-backdrops\" title=\"Custom Backdrops\">custom jobs<\/a>. <\/p><p><\/p><p><em>Follow us behind the scenes at <\/em><a href=\"https:\/\/www.instagram.com\/clubstyling\/\"><em>@clubstyling<\/em><\/a><\/p>",
+            "text_style": "body"
+          }
+        },
+        "165823454926469c5d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "More About Us",
+            "button_link": "shopify:\/\/pages\/about"
+          }
+        }
+      },
+      "block_order": [
+        "165823454926469c5d-0",
+        "165823454926469c5d-1",
+        "165823454926469c5d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-how-to-hero.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "1658238902640ef5d5": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "How to",
+        "heading_size": "h1",
+        "blog": "how-to",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "1662461890fd34af51": {
+      "type": "rich-text",
+      "blocks": {
+        "16624618905446be20-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>The daily feed<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "149a7a05-b363-45ba-bd39-7fb6da7aafdf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Serving up Insta-inspiration when you're hungry for ideas.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16624618905446be20-0",
+        "149a7a05-b363-45ba-bd39-7fb6da7aafdf"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "1658238957188a6c4f": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
+    "1662468258bac8e3eb",
     "image_banner",
-    "rich_text",
+    "165824098506c5f22d",
+    "16595607590a998055",
+    "16624611931172d8e4",
+    "16624678692b095618",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "16624622629ed1079d",
+    "16582378894a0b6caf",
+    "16582341709c2541ed",
+    "1659627804e7363432",
+    "1656946869fb9f7093",
+    "166246258182f012fe",
+    "165823455059910c2d",
+    "1658238902640ef5d5",
+    "1662461890fd34af51",
+    "1658238957188a6c4f"
   ]
 }

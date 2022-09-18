@@ -1,0 +1,15 @@
+{% comment %}CLUB - show customer referral banner with link on account page{% endcomment %}
+{% if customer.metafields.my_fields.referral_link %}
+    <div class="referral-banner">
+        <div class="dashed-banner">
+            <h2>*** Give a backdrop ***<br />*** Get a backdrop ***</h2>
+            <p>Just share your unique referral link <em>exactly</em> as shown below:<br />
+            <span class="highlight">{{ customer.metafields.my_fields.referral_link }}</span>
+            </p>
+            <p>Any new customer who shops via your link will receive a FREE BACKDROP with any other backdrop purchase*, then for each referral you'll be emailed a coupon code for the same.</p>
+        </div>
+        <p class="disclaimer">
+            <em>*Read the full <a href="https://clubbackdrops.com/pages/club-referrals-terms">Club Referrals Terms &amp; Conditions here &rarr;</a></em>
+        </p>
+    </div>
+{% endif %}

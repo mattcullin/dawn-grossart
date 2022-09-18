@@ -1,0 +1,15 @@
+{% comment %}CLUB - show sub-nav of tags{% endcomment %}
+
+{{ 'club-tag-filter.css' | asset_url | stylesheet_tag }}
+
+<div class="club-tag-filter page-width">
+{% if collection.all_tags.size > 1 %}
+    <ul class="tag-list">
+      {% for tag in collection.all_tags %}
+        {% unless tag contains 'Style' or tag contains 'Colour: Mixed' or tag contains 'Tone: Mid' %}
+          <li><a {% if current_tags contains tag %}class="tag-list-active" {% endif %}href="/collections/{% if collection.handle != blank %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handleize }}">{% if tag contains 'Colour' %}<span style="color: {{ tag | remove: 'Colour: ' }}">&#9632;&nbsp;</span>{% endif %}{{ tag | remove: 'Colour: ' | remove: 'Texture: ' | remove: 'Tone: ' }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+{% endif %}
+</div>

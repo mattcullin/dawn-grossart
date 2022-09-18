@@ -7,8 +7,80 @@
         "padding_bottom": 36
       }
     },
+    "16621201984e89d901": {
+      "type": "collapsible-content",
+      "blocks": {
+        "16621201985543a64a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where is my order?",
+            "icon": "plane",
+            "row_content": "<p><strong>Have you:<\/strong><\/p><p>1. Checked your spam folder for our shipping update?<\/p><p>2. Contacted the <a href=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/22-where-is-my-order\">shipping provider as outlined in our guide here<\/a>?<\/p><p>3. <a href=\"#beacon-modal-latest\" title=\"#beacon-modal-latest\">Read our latest update<\/a>? Whilst most delivery services are back to normal, we're still seeing some delays.<\/p><p>If you have checked and still had no luck, we're really sorry! Please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> and we'll look into this for you as a priority.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I'd like to return an item",
+            "icon": "return",
+            "row_content": "<p>We're more than happy to accept returns <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">as outlined in our return policy<\/a>. Items must be:<\/p><p>- <strong>Within 30 days <\/strong>of the delivery date<\/p><p>- <strong>Unused<\/strong> and in their original condition<\/p><p>To initiate a return please pack up your backdrop(s) carefully, post to <a href=\"#beacon-modal-returns\" title=\"#beacon-modal-returns\">the appropriate returns address<\/a>, then <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your return tracking details.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The website or editor isn't working",
+            "icon": "question_mark",
+            "row_content": "<p>Sorry to hear you're having some trouble! We first suggest to try the following:<\/p><p><strong>1. Clear your browser cache <\/strong>or reload the site an incognito\/private window<\/p><p><strong>2. Try another browser<\/strong><\/p><p>If you continue to experience an issue please <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with a brief description. You can also add a screenshot so we can better troubleshoot for you. 😀<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "16621201985543a64a-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can we collaborate?",
+            "icon": "heart",
+            "row_content": "<p>At this time we're not accepting upfront offers to collaborate. We actively search for collaboration opportunities when have a specific project in mind from within our follower network.<\/p><p>What do we look for?<br\/><strong>Out-of-this-world photography.<\/strong><\/p><p>We're less impressed by numbers.<br\/>We care most about the craft and your art.<br\/>We like to work with <strong>studio photographers<\/strong> who are better than us!<br\/>Who are creating imagery that <strong>excites and inspires us<\/strong> and our followers.<\/p><p>Like the phenomenal <a href=\"https:\/\/www.instagram.com\/daryna_barykina\/\" target=\"_blank\">@daryna_barykina<\/a><br\/>Or the utterly alluring <a href=\"https:\/\/www.instagram.com\/gerardbelevender\/\" target=\"_blank\">@gerardbelevender<\/a><br\/>And the meticulously polished <a href=\"https:\/\/www.instagram.com\/karolinaimg\/\" target=\"_blank\">@karolinaimg<\/a><\/p><p>And we make it worthwhile for those that <strong>blow our minds<\/strong>.<\/p><p>If you think you're up to it:<br\/>Get familiar with our product.<br\/>Take sublime pictures.<br\/>Get to know us.<br\/>If you make an impression, we can take it from there...<\/p><p>We don't respond to any upfront requests for free product.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "db15c6c0-06f1-403e-ab63-af17057d2bf5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Something else...",
+            "icon": "chat_bubble",
+            "row_content": "<p><strong>Frequently asked questions:<\/strong><\/p><p><a href=\"#beacon-modal-delivery\" title=\"#beacon-modal-delivery\">What are your shipping & delivery options?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/14-will-i-be-charged-vat\">Will I be charged VAT?<\/a><\/p><p><a href=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\" target=\"_blank\" title=\"https:\/\/help.clubbackdrops.com\/article\/23-colour-variance\">I'm unsure about the colour of my backdrop<\/a><\/p><p>Still need help? Simply <a href=\"#beacon-message\" title=\"#beacon-message\">message us<\/a> with your query.<\/p><p><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "16621201985543a64a-0",
+        "16621201985543a64a-1",
+        "16621201985543a64a-2",
+        "16621201985543a64a-3",
+        "db15c6c0-06f1-403e-ab63-af17057d2bf5"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "How can we help?",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -16,10 +88,137 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1662121191d2218151": {
+      "type": "rich-text",
+      "blocks": {
+        "1662121191928f025e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Message Us",
+            "button_link": "#beacon-message",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1662121191928f025e-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166212964878df893a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1662129647d1048a5a-0": {
+          "type": "column",
+          "settings": {
+            "title": "UK",
+            "text": "<p><strong>Local pick ups and returns<\/strong><\/p><p>-<\/p><p>Pineapple Express<\/p><p>48-50 Jane Street, Edinburgh<br\/>Scotland, EH6 5HG, UK<\/p><p>-<br\/><a href=\"#beacon-message\" title=\"#beacon-message\"><em>Give us a heads up<\/em><\/a><em> if you're picking up!<\/em><\/p><p>Open <strong>Mon - Fri, 9am - 5pm<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1662129647d1048a5a-1": {
+          "type": "column",
+          "settings": {
+            "title": "USA",
+            "text": "<p><strong>Returns<\/strong><\/p><p><em>-<\/em><\/p><p>Pineapple Express<br\/>15 Boulden Circle Ste 100<br\/>FF541807 Fishisfast<br\/>New Castle, DE (Delaware)<br\/>19726-9004<br\/>USA<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662129647d1048a5a-0",
+        "1662129647d1048a5a-1"
+      ],
+      "settings": {
+        "title": "Our Locations",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16621332025d6898d9": {
+      "type": "collage",
+      "blocks": {
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-square-packing.jpg",
+            "image_padding": false
+          }
+        },
+        "bef4f7d2-171c-415d-8ea0-af263052d9e6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-square-office.jpg",
+            "image_padding": false
+          }
+        },
+        "bc19ea00-1abd-4183-b0d1-489722a926fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact-food-shoot.jpg",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "42de2f9e-2c08-4d5a-bb73-1a020a513357",
+        "bef4f7d2-171c-415d-8ea0-af263052d9e6",
+        "bc19ea00-1abd-4183-b0d1-489722a926fa"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1662130426f71e839d": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/club-backdrops-hero-contact.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "16621201984e89d901",
+    "form",
+    "1662121191d2218151",
+    "166212964878df893a",
+    "16621332025d6898d9",
+    "1662130426f71e839d"
   ]
 }

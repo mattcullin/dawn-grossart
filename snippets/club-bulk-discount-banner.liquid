@@ -1,0 +1,18 @@
+{%- comment -%}
+    CLUB - Renders bulk discount banner
+
+    Usage:
+    {% render 'club-bulk-discount-banner' %}
+{%- endcomment -%}
+
+<div class="club-bulk-discount-banner">
+    {%- if cart_item_count == 1 -%}
+        <p class="dashed-banner accent-text accent-border">💸 Add <strong>1 more item</strong> to get <span class="highlight">15% off</span></p>
+    {%- elsif cart_item_count == 2 -%}
+        <p class="dashed-banner accent-text accent-border">💸 Add <strong>1 more item</strong> to get <span class="highlight">20% off</span></p>
+    {%- elsif cart_item_count == 3 -%}
+        <p class="dashed-banner accent-text accent-border">💸 Add <strong>1 more item</strong> to get <span class="highlight">25% off</span></p>
+    {%- elsif cart_item_count >= 4 -%}
+        <p class="dashed-banner">👍 You got <span class="highlight-alt">25% off</span>!</p>
+    {%- endif -%}
+</div>

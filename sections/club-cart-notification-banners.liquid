@@ -1,0 +1,12 @@
+{% comment %}CLUB - Bulk Discount, Shipping Banner + Subtotal on Cart Notification{% endcomment %}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+
+{% assign mystery_pack_total = 0 %}
+{%- for item in cart.items -%}
+    {%- if item.sku contains 'MYST' -%}
+    {% assign mystery_pack_total = mystery_pack_total | plus: item.quantity %}          
+    {%- endif -%}
+{%- endfor -%}
+{% assign cart_item_count_ex_mystery_packs = cart.item_count | minus: mystery_pack_total %}
+{% render 'club-bulk-discount-banner', cart_item_count: cart_item_count_ex_mystery_packs %}
+{% render 'club-shipping-discount-banner' %}

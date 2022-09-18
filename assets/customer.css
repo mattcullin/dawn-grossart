@@ -264,14 +264,14 @@
 
 /* Pagination */
 .customer .pagination {
-  margin-top: 5rem;
-  margin-bottom: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 990px) {
   .customer .pagination {
-    margin-top: 7rem;
-    margin-bottom: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -752,4 +752,27 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7),
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
+}
+
+/* CLUB - hide underline from PDF link, format referral banner */
+td[data-label="Invoice"] a {
+  text-decoration: none;
+}
+
+.customer .referral-banner { 
+  max-width: 990px;
+  margin: 20px auto 0 auto;
+}
+
+.customer .dashed-banner {
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 20px;
+}
+
+.customer .dashed-banner h2 { margin: 0; }
+
+@media screen and (min-width: 990px) {
+  :is(.account, .order) .customer .dashed-banner h2 {
+    margin-top: 0;
+  }
 }

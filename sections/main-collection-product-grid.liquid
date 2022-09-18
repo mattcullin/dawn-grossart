@@ -27,6 +27,10 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
+  {% comment %}CLUB - legacy tag filtering menu{% endcomment %}
+  {% if section.settings.enable_tag_filter %}
+    {% render 'club-tag-filter' %}
+  {% endif %}
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -242,6 +246,12 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_tag_filter",
+      "label": "Enable tag filter",
+      "default": false
     },
     {
       "type": "header",

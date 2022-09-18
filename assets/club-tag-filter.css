@@ -1,0 +1,41 @@
+.club-tag-filter .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: -2.5rem; 
+    padding: 0 0 1rem 0;
+}
+
+.club-tag-filter .tag-list li {
+    display: block;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.club-tag-filter .tag-list li a {
+    color: rgb(var(--color-foreground));
+    box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground),.2);
+    border-radius: 2.6rem;
+    font-size: calc(var(--font-heading-scale) * 1.2rem);
+    text-decoration: none;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    text-transform: uppercase;
+    min-height: 0;
+    min-width: 0;
+    padding: 0.25rem 1rem;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+}
+
+.club-tag-filter .tag-list li a:hover,
+.club-tag-filter .tag-list li a.tag-list-active {
+    box-shadow: 0 0 0 0.2rem rgb(var(--color-foreground));
+}
